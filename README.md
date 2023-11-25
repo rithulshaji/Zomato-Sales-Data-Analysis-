@@ -11,6 +11,20 @@ The dataset consists of tables:
 - `sales`: Sales transactions with user IDs, transaction dates, and product IDs.
 - `product`: Product information including IDs, names, and prices.
 
+- | Table Name        | Column Name      | Data Type  | Primary Key? | Foreign Key? |
+|-------------------|------------------|------------|--------------|--------------|
+| goldusers_signup  | userid           | integer    | Yes          | No           |
+| goldusers_signup  | gold_signup_date | date       | No           | No           |
+| users             | userid           | integer    | Yes          | No           |
+| users             | signup_date      | date       | No           | No           |
+| sales             | userid           | integer    | No           | Yes (users.userid) |
+| sales             | created_date     | date       | No           | No           |
+| sales             | product_id       | integer    | No           | Yes (product.product_id) |
+| product           | product_id       | integer    | Yes          | No           |
+| product           | product_name     | text       | No           | No           |
+| product           | price            | integer    | No           | No           |
+
+
 ## Key SQL Queries and Findings
 
 ### 1. Customer Spending
