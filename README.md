@@ -11,7 +11,7 @@ The dataset consists of tables:
 - `sales`: Sales transactions with user IDs, transaction dates, and product IDs.
 - `product`: Product information including IDs, names, and prices.
 
-- | Table Name        | Column Name      | Data Type  | Primary Key? | Foreign Key? |
+| Table Name        | Column Name      | Data Type  | Primary Key? | Foreign Key? |
 |-------------------|------------------|------------|--------------|--------------|
 | goldusers_signup  | userid           | integer    | Yes          | No           |
 | goldusers_signup  | gold_signup_date | date       | No           | No           |
